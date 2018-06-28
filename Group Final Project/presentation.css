@@ -1,0 +1,17 @@
+nav iframe{
+height: 800px;
+width 700px;
+}
+.download{
+float: center;
+height: 300px;
+width: 300px;
+display:block;
+padding: 100px 50px;
+background:#6B7a8f;
+color: Beige;
+text-align: center;
+font-size: 150%;
+text-decoration: none;
+font-family: Al Tarikh;
+}
