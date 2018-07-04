@@ -1,0 +1,37 @@
+<html>
+	<head> <title> JavaScript 3</title> </head>
+	<body>
+	<h1>JavaScript 3</h1>
+	
+	<p> Please enter a non-negative number </p>
+	<input type="text" id="max_number"/>
+	<input type="button" value="Count!" onclick="count_it()" />
+	<br>
+	<span id="counter"> </span>
+	
+	<h2> JavaScript Questions </h2>
+	<ul>
+	<li> The difference between n= 1+ 2 and n= "1"+ "2" is that one is adding 
+	integers and one is adding strings so the first will out print 3 while the 
+	second will out print 12</li>
+	<li> += sign adds an element to a value and at the same time updates that value to 
+	incude what was added</li>
+	<li> We have used the input tag, the document.getElementById... call  </li>
+	<script>
+	function count_it() {
+	var max_num = document.getElementById("max_number").value;
+	var numbers = "";
+	for (var i = 1; i <= max_num; i++){
+	if((i%10)==0){
+	numbers += String(i) + "<br>";
+	}
+	else {
+	numbers += String(i) + " ";
+	}
+	}
+	document.getElementById("counter").innerHTML = numbers;
+	}
+	</script>
+	
+	</body>
+</html>

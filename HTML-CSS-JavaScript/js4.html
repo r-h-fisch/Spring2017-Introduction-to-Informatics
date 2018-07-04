@@ -1,0 +1,65 @@
+<html>
+	<head> <title> JavaScript4</title> </head>
+	<body>
+	<h1> Rock, Paper, Scissors Game</h1>
+	<input type="image" src="images/rock.jpg" onclick="rock_choice()" />
+	<p id="testr"> </p>
+	<input type="image" src="images/paper.png" onclick="paper_choice()" />
+	<p id="testp"> </p>
+	<input type="image" src="images/scissors.png" onclick="scissors_choice()" />
+	<p id="tests"> </p>
+	
+	<script>
+	function rock_choice(){
+	var number = Math.floor(Math.random()*3+1);
+	document.getElementById("testr").innerHTML = number;
+	if (number == 1){
+	document.getElementById("testr").innerHTML = 
+	"<h1>YOU:</h1> <img src='images/rock.jpg'/> <h1> COMPUTER: </h1> <img src='images/rock.jpg'/><h1>TIE</h1>"; }
+	else if(number == 2){ document.getElementById("testr").innerHTML = 
+	"<h1>YOU:</h1> <img src='images/rock.jpg'/> <h1> COMPUTER: </h1> <img src='images/paper.png'/><h1>LOSE</h1>";  }
+	else { document.getElementById("testr").innerHTML = 
+	"<h1>YOU:</h1> <img src='images/rock.jpg'/> <h1> COMPUTER: </h1> <img src='images/scissors.png'/><h1>WIN</h1>";}
+}
+	function paper_choice(){
+	var number2 = Math.floor(Math.random()*3+1);
+	document.getElementById("testp").innerHTML =number2;
+	if (number2 == 1){
+	document.getElementById("testp").innerHTML = 
+	"<h1>YOU:</h1> <img src='images/paper.png'/> <h1> COMPUTER: </h1> <img src='images/rock.jpg'/><h1>WIN</h1>"; }
+	else if(number2 == 2){ document.getElementById("testp").innerHTML = 
+	"<h1>YOU:</h1> <img src='images/paper.png'/> <h1> COMPUTER: </h1> <img src='images/paper.png'/><h1>TIE</h1>"; }
+	else { document.getElementById("testp").innerHTML = 
+	"<h1>YOU:</h1> <img src='images/paper.png'/> <h1> COMPUTER: </h1> <img src='images/scissors.png'/><h1>LOSE</h1>"; }
+}
+	function scissors_choice(){
+	var number3 = Math.floor(Math.random()*3+1);
+	document.getElementById("tests").innerHTML = number3;
+	if (number3 == 1){
+	document.getElementById("tests").innerHTML = 
+	"<h1>YOU:</h1> <img src='images/scissors.png'/> <h1> COMPUTER: </h1> <img src='images/rock.jpg'/><h1>LOSE</h1>"; }
+	else if(number3 == 2){ document.getElementById("tests").innerHTML = 
+	"<h1>YOU:</h1> <img src='images/scissors.png'/> <h1> COMPUTER: </h1> <img src='images/paper.png'/><h1>WIN</h1>"; }
+	else { document.getElementById("tests").innerHTML = 
+	"<h1>YOU:</h1> <img src='images/scissors.png'/> <h1> COMPUTER: </h1> <img src='images/scissors.png'/><h1>TIE</h1>"; }
+	}
+	</script>
+	<h2>JavaScript Questions</h2>
+	<ul>
+	<li> The benefit of breaking down the construction of bigger projects into smaller pieces
+	is that it becomes easier to spot errors that might appear in your code and fix them faster
+	it also provides a more organized way of coding. </li>
+	<li> We constantly check and test our code to make sure that nothing we 
+	added has caused an error and that the program runs smoothly. If we did not do this
+	it would take much more time to find errors in the code that could have been 
+	easily avoided by checking and testing.</li>
+	<li> To make this game suitable for 2 players, we would have to add another set of images to the screen 
+	and instead of comparing the numbers in the for loops, we could assign the second player a number 
+	based off of what he or she clicked as an image and then use the for loop we have already created to determine the 
+	outcome of the game. The pseudocode would look something like this for example, the first player choose rock, 
+	inside the rock_choice() we would create a new variable user that would have an if statement based on
+	what the user choose saying if (userinput== "images/rock.jpg"){user==1} then use the other for loop
+	and instead of using number use the var user. </li>
+	</ul>
+	</body>
+</html>

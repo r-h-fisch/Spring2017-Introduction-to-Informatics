@@ -1,0 +1,24 @@
+table{
+border-width: thin;
+border-color: black;
+border-style: solid;
+}
+
+.tablehead{
+background-color: black;
+color: white;
+}
+
+.datastyle{
+background-color: lavender;
+color: olive;
+font-size: 250%;
+}
+.datastyle2{
+background-color: olive;
+color: lavender;
+font-size: 250%;
+}
+.redback{
+background-color: red;
+}

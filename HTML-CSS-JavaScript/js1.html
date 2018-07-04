@@ -1,0 +1,65 @@
+<html>
+	<head>  <title> JavaScript 1</title> 
+	</head>
+	<body>
+	<h1>JavaScript 1 </h1>
+	<p id= "script1" > This is my first JavaScript </p>
+	<button type="button" onclick="newFunction()"> Click here! </button>
+	<h1> JS1 </h1>
+	
+	<h1> JavaScript + CSS </h1>
+	<p id="styleChange1"> JavaScript can change the style of the text too! </p>
+	<button type="button" onclick="styleChange1()" > Click Me!</button>
+	
+	<h1> Trying it one more time </h1>
+	<p id="styleChange2"> My name is Rebecca Fisch </p>
+	<button type="button" onclick="styleChange2()" > Click Me!</button>
+	
+	<h2> JavaScript Homework </h2>
+	<p id= "script2" > Yo, I'll tell you what I want, what I really, really want.
+So tell me what you want, what you really, really want. </p>
+	<button type="button" onclick="answer()"> Tell me </button>
+	
+	<p id= "styleChange3" > If you want my future, forget my past.
+If you wanna get with me, better make it fast. Now don't go wasting my precious time.
+Get your act together we could be just fine. </p>
+	<button type="button" onclick="styleChange3()" > Change my act</button>
+	
+		<script>
+		function newFunction() {
+		document.getElementById("script1").innerHTML= "It worked!";
+		}
+		
+		function styleChange1() {
+		document.getElementById("styleChange1");
+		var x = document.getElementById("styleChange1"); 
+		x.style.fontSize = "25px";           
+		x.style.color = "red";
+		}
+		
+		function styleChange2() {
+		document.getElementById("styleChange2");
+		var x = document.getElementById("styleChange2"); 
+		x.style.fontSize = "50px";           
+		x.style.color = "lavender";
+		x.style.background = "green";
+		}
+		
+		function answer(){
+		document.getElementById("script2").innerHTML= 
+		"I wanna really, really, really wanna zigazig ah.";
+		}
+		
+		function styleChange3() {
+		document.getElementById("styleChange3");
+		var x = document.getElementById("styleChange3"); 
+		x.style.fontSize = "50px";
+		x.style.font="bold";           
+		x.style.color = "yellow";
+		x.style.background = "blue";
+		}
+		
+		
+		</script>
+	</body>
+</html>
